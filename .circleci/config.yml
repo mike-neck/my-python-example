@@ -8,3 +8,9 @@ jobs:
       - checkout
       - run:
           command: python -m unittest discover tests/
+
+workflows:
+  version: 2
+  run-tests:
+    jobs:
+      - test
